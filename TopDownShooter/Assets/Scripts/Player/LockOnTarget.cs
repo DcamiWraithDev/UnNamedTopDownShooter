@@ -112,24 +112,9 @@ public class LockOnTarget : MonoBehaviour
 
             activeIndicator = Instantiate(lockOnIndicatorPrefab, indicatorPosition, Quaternion.identity);
             activeIndicator.transform.SetParent(currentTarget);
-
-            ApplyGlowEffect(activeIndicator);
         }
     }
 
-    void ApplyGlowEffect(GameObject indicator)
-    {
-        SpriteRenderer sr = indicator.GetComponent<SpriteRenderer>();
-        if (sr != null)
-        {
-            Material glowMaterial = new Material(Shader.Find("Sprites/Default"));
-            glowMaterial.SetColor("_Color", Color.white);
-            glowMaterial.EnableKeyword("_EMISSION");
-            glowMaterial.SetColor("_EmissionColor", Color.white);   
-
-            sr.material = glowMaterial;
-        }
-    }
 
     void DestroyIndicator()
     {
