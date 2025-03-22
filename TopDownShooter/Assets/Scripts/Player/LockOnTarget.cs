@@ -115,7 +115,6 @@ public class LockOnTarget : MonoBehaviour
         }
     }
 
-
     void DestroyIndicator()
     {
         if (activeIndicator != null)
