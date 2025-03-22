@@ -130,6 +130,8 @@ GameObject:
   - component: {fileID: 2575798}
   - component: {fileID: 2575797}
   - component: {fileID: 2575796}
+  - component: {fileID: 2575799}
+  - component: {fileID: 2575800}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -253,6 +255,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2575799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2575795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39f60b4ac231fc4c954e04942cc7423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 100
+  CurrentHealth: 100
+--- !u!114 &2575800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2575795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d684399bac2194d9693d20e78c5a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageAmount: 25
 --- !u!1 &409357404
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,6 +388,7 @@ GameObject:
   - component: {fileID: 703735743}
   - component: {fileID: 703735742}
   - component: {fileID: 703735744}
+  - component: {fileID: 703735745}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -541,6 +571,20 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   playerMovement: {fileID: 703735742}
   lockOnIndicatorPrefab: {fileID: 883494752296239208, guid: e5032fa60e5d37c44b09350414da8463, type: 3}
+--- !u!114 &703735745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703735737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39f60b4ac231fc4c954e04942cc7423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 100
+  CurrentHealth: 100
 --- !u!1 &1733189774
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +596,8 @@ GameObject:
   - component: {fileID: 1733189776}
   - component: {fileID: 1733189775}
   - component: {fileID: 1733189777}
+  - component: {fileID: 1733189778}
+  - component: {fileID: 1733189779}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -675,6 +721,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1733189778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733189774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39f60b4ac231fc4c954e04942cc7423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 100
+  CurrentHealth: 100
+--- !u!114 &1733189779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733189774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d684399bac2194d9693d20e78c5a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageAmount: 25
 --- !u!1 &1892768693
 GameObject:
   m_ObjectHideFlags: 0
